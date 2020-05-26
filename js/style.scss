@@ -9,7 +9,7 @@ $columns: 10;
 $rows: 3;
 
 // colors
-$background: rgb(77, 167, 140);
+$background: rgb(29, 98, 202);
 $text-color: rgb(179, 115, 47);
 $interface: rgb(50, 75, 116);
 $highlight: rgb(252, 233, 233);
@@ -18,6 +18,14 @@ $highlight: rgb(252, 233, 233);
 
 body {
 	background: $background;
+}
+
+.main-container{
+	width: 100%;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 
 h2 {
@@ -41,6 +49,7 @@ h2 {
 }
 section {
 	margin-bottom:50px;
+	
 }
 
 
@@ -49,8 +58,8 @@ section {
 	width: $columns * ($block-size + $gutter);
 	height: $rows * $block-size;
 	position: relative;
-	left: 10vw;
-	margin-top: 15vh;
+	right: 9vw;
+	margin-top: 9vh;
 
 	.group-number {
 		position: absolute;
